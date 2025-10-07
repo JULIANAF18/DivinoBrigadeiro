@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F8D6D2;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.navbar .logo{
+    width: 180px;
+}
+.navbar .logo img{
+    width: 100%;
+}
+.navbar .links ul{
+    list-style: none;
+    display: flex;
+}
+.navbar .links ul li a{
+    text-decoration: none;
+    color: #A0522D;
+    font-size: 24px;
+    padding: 5px;
+}
+.navbar .links ul li a:hover{
+    color: #E8505B;
+}
+.container{
+    padding-top: 10px;
+    display: block;
+    align-items: center;
+    width: 100%;
+}
+
+/* Parte textual ocupa 50% do container */
+.container .text{
+    width: 100%;
+    color: #4e2806;
+    ;
+}
+
+
+/* Texto em h1 na div text terá 55px de tamanho e negrito 600 */
+.container .text h1{
+    font-size: 55px;
+    font-weight: 400;
+;
+}
+
+/* Texto selecionado por span no h1 terá negrito mais forte */
+.container .text h1 span{
+    font-weight: 600;
+}
+
+/* Parágrafo na div text ocupa 85% da largura, fonte de tamanho 17px */
+/* Margin de 17px na parte inf/sup e de 0px em dir/esq */
+/* Cor cinza */
+.container .text p{
+    width: 85%;
+    font-size: 20px;
+    margin: 25px 0;
+    color: #A0522D;;
+}
+.container .image-gallery {
+  display: flex;
+  overflow-x: auto;      /* Permite rolagem horizontal */
+  gap: 76px;             /* Espaço entre as imagens */
+  padding: 10px 0;
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+.container .image-gallery img {
+  height: 250px;
+  flex-shrink: 0;         /* Impede que a imagem seja reduzida */
+  border-radius: 8px;
+  object-fit: cover;
+}
+.menu{
+   display: block;
+   width: 100%;
+   margin-top: 50px;
+   color: #4e2806;
+   
+}
+
+.menu h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.menu .flavors{
+    list-style: none;
+    columns: 2;
+    column-gap: 80px;
+    padding: 0;
+    color: #A0522D;
+}
+.menu .flavors li{
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+/* Configuração do botão com padding de 15px em inf/sup e 30px em dir/esq */
+/* Tamanho da fonte em 20px, sem bordas, sem contorno, arredondando, com fundo vermelho*/
+/* Texto branco, cursor normal e 0.2s de transição de cor */
+.container .text button{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #E8505B;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Ao passar o mouse no botão, ele muda de cor */
+.container .text button:hover{
+    background: #bb444c;
+}
+
+/* A classe photo ocupa 50% da classe container */
+.container .photo{
+    width: 50%;
+}
+
+/* A imagem da direita terá 520px de largura*/
+.container .photo img{
+    width: 520px;
+}
+.contato h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #4e2806;
+}
+.contato p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #A0522D;
+
+}
+.contato button{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #4e2806;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.contato button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Ao passar o mouse no botão, ele muda de cor */
+.contato button:hover{
+    background: #A0522D;
+}
+footer{
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    color: #4e2806;
+}
